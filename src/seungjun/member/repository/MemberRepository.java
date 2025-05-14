@@ -24,7 +24,7 @@ public class MemberRepository {
         return newMember;
     }
 
-    Member findByLoginId(String loginId) {
+    public Member findByLoginId(String loginId) {
         for(Member member : userInfo.values()) {
             if(member.getLoginId().equals(loginId)){
                 return member;
