@@ -1,14 +1,17 @@
 package seungjun;
 
+import seungjun.member.repository.MemberRepository;
+import seungjun.member.service.MemberService;
+import seungjun.member.service.MemberServiceImpl;
+import seungjun.member.ui.MemberUI;
+
 public class SeungjunPractice {
 
     public static void main(String[] args){
-        System.out.println("Hello, this is Seungjun's Git Practice!");
-        greet();
-    }
 
-    public static void greet(){
-        System.out.println("안녕하세요! 깃 연습중 입니다!");
+        MemberService service = new MemberServiceImpl(new MemberRepository());
+        MemberUI ui = new MemberUI(service);
+        ui.start();
     }
 
     // 여기에 본인이 담당한 기능을 구현해 보세요!!
