@@ -11,12 +11,10 @@ public class MemoryOrderRepository implements OrderRepository {
 
     @Override
     public List<Order> findOrders(Long memberId) {
-//        List<Long> orderRelationshipList = new ArrayList<>();
         List<Order> orderContendsList = new ArrayList<>();
         Set<Long> relationshipKey = orderRelationships.keySet();
         Long orderId;
         for (Long key : relationshipKey) {
-            //Object's'는 처음 보는 거 같은데..?
             //주문id들 중 유저id와 매칭되는 것들을 찾아서 리스트에 저장한다
             if (Objects.equals(orderRelationships.get(key), memberId)) {
                 orderId = key;
