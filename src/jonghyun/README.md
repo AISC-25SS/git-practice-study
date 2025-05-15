@@ -19,5 +19,16 @@
 
 ---
 
-## 🧪 실행 
+## 🧪 실행 결과
 ![image](https://github.com/AISC-25SS/git-practice-study/blob/jonghyun-branch/src/jonghyun/github%20test.png)
+
+
+
+## ✅ 진행 기능 (Todos)
+
+- [x] 주문자 정보 입력 (이름, 회원ID, 등급)
+- [x] 상품 정보 입력 (상품명, 가격, 수량)
+- [x] VIP 회원일 경우 **1000원 할인 적용**
+- [x] 주문 정보 저장 및 콘솔 출력
+- [x] MVC 구조 적용 (도메인, 서비스, UI, 저장소 분리)
+- [x] Git 커밋/푸시 및 브랜치 관리 실습
