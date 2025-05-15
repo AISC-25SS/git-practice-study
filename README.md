@@ -1,7 +1,23 @@
 ## Dowon Repository
 
 폴더 구조
+'''
+item/
+├── list/
+│   └── List.java             ← 전체 목록 출력
+├── registration/
+│   └── Registration.java     ← 상품 등록 로직
+├── revise/
+│   └── Revise.java           ← 수정 UI 또는 컨트롤러
+│   └── ReviseService.java    ← 수정 로직
+├── ui/
+│   └── Ui.java               ← 콘솔/Swing UI
+├── model/
+│   └── Item.java             ← 공통 Item 클래스
+├── repository/
+│   └── ItemRepository.java   ← Item 저장, 조회 등 Map 기반 로직
 
+'''
 ---
 ## 🛩️ 작업할 내용
 상품기능을 구현합니다.
