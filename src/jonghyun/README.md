@@ -17,11 +17,6 @@
 | 🧱 구조 분리 (MVC 적용)     | `UI`, `Service`, `Repository`, `Domain` 역할 분리 |
 | 🔀 Git 브랜치 커밋 푸시 연습 | 브랜치 생성, 커밋 나누기, README 작성 |
 
----
-
-## 🧪 실행 결과
-![image](https://github.com/AISC-25SS/git-practice-study/blob/jonghyun-branch/src/jonghyun/github%20test.png)
-
 
 
 ## ✅ 진행 기능 (Todos)
@@ -32,3 +27,11 @@
 - [x] 주문 정보 저장 및 콘솔 출력
 - [x] MVC 구조 적용 (도메인, 서비스, UI, 저장소 분리)
 - [x] Git 커밋/푸시 및 브랜치 관리 실습
+
+---
+
+## 🧪 실행 결과
+![image](https://github.com/AISC-25SS/git-practice-study/blob/jonghyun-branch/src/jonghyun/github%20test.png)
+
+
+
