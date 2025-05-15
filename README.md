@@ -28,7 +28,7 @@
 폴더 구조는 기능 단위(list, registration, revise, ui)로 나누어 구성
 - 
 
-![image](https://github.com/user-attachments/assets/c4fb8d13-9ff0-4d64-a667-b9bbb2815ba0)
+![image]()
 
 ### ☑️ TodosNext
 - [x] 상품명중복 체크
