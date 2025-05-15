@@ -3,7 +3,7 @@ package eunhyejo;
 public class EunhyePractice {
     public static void main(String[] args) {
         System.out.println("\nHello, eunhye Git Practice!!");
-        greet();    
+        greet();
     }
 
     public static void greet() {
