@@ -15,7 +15,7 @@ public class Member {
         this.grade = grade;
     }
 
-    // getter 우선 입력만
+    // getter 우선 입력(?출력)만
     public Long getMemberId() { return memberId; }
     public String getLoginId() { return loginId; }
     public String getLoginPw() { return loginPw; }

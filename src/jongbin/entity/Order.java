@@ -1,31 +1,38 @@
 package jongbin.entity;
 
+import seungjun.item.repository.ItemRepository;
+import seungjun.item.service.ItemService;
+import seungjun.member.repository.MemberRepository;
+import seungjun.member.service.MemberService;
+import seungjun.member.service.MemberServiceImpl;
+
+
 public class Order {
-    private Long orderId;
-    private String productName;
-    private Long price;
+    private Long memberId;         // 주문자 회원 ID
+    private String itemName;
+//    private Long itemId;           // 상품 ID
+    private int itemPrice;         // 상품 가격
+    private int discountPrice;     // 할인 금액
+    private int finalPrice;        // 최종 결제 금액
 
-    public Long getOrderId() {
-        return orderId;
+    public Order(Long memberId, Long itemId) {
+        this.memberId = memberId;
+        this.itemId = itemId;
     }
 
-    public void setOrderId(Long orderId) {
-        this.orderId = orderId;
-    }
+    MemberRepository memberRepository = new MemberRepository();
+    MemberService memberService = new MemberServiceImpl(memberRepository);
+    ItemRepository itemRepository = new ItemRepository();
+    ItemService itemService = new ItemService(itemRepository);
 
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
-
-    public Long getPrice() {
-        return price;
-    }
-
-    public void setPrice(Long price) {
-        this.price = price;
+    @Override
+    public String toString() {
+        return "[주문 완료]" + "\n" +
+                "회원: " + memberService.findById(memberId).name + " "
+                + "(" + memberService.findById(memberId).grade + ")" + "\n" +
+                "상품: " + itemService.findById(itemId) + "\n" +
+                "수량: " + itemPrice + "개" + "\n" +
+                "할인 적용: " + discountPrice + "원" + "\n" +
+                "총 금액: " + finalPrice + "원" + "\n";
     }
 }
