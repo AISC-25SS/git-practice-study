@@ -19,4 +19,5 @@
 
 ---
 
-## 🧪 실행 예시
+## 🧪 실행 
+![image](https://github.com/AISC-25SS/git-practice-study/blob/jonghyun-branch/src/jonghyun/github%20test.png)
