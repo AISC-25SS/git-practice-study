@@ -1,17 +1,17 @@
 package protoType.ui;
 
 import protoType.member.Member;
+import protoType.member.Grade;
 import protoType.item.Item;
 import protoType.order.Order;
-
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
 public class OrderUI {
-    private Scanner scanner = new Scanner(System.in);
-    private List<Order> orders = new ArrayList<>();
+    private final Scanner scanner = new Scanner(System.in);
+    //private List<Order> orders = new ArrayList<>();
     private MemberUI memberUI;
     private ItemUI itemUI;
 
@@ -24,37 +24,37 @@ public class OrderUI {
         System.out.println("\n===== 상품 주문 =====");
 
         // 상품 목록 표시
-        List<Item> items = itemUI.getItems();
-        if (items.isEmpty()) {
-            System.out.println("등록된 상품이 없습니다.");
-            return;
-        }
-
-        System.out.println("주문 가능한 상품 목록:");
-        for (Item item : items) {
-            System.out.println(item);
-        }
+//        List<Item> items = itemUI.getItems();
+//        if (items.isEmpty()) {
+//            System.out.println("등록된 상품이 없습니다.");
+//            return;
+//        }
+//
+//        System.out.println("주문 가능한 상품 목록:");
+//        for (Item item : items) {
+//            System.out.println(item);
+//        }
 
         // 상품 선택
-        System.out.print("주문할 상품 ID 입력: ");
-        Long itemId = scanner.nextLong();
-        scanner.nextLine(); // 버퍼 비우기
-
-        Item selectedItem = itemUI.findItemById(itemId);
-        if (selectedItem == null) {
-            System.out.println("해당 ID의 상품을 찾을 수 없습니다.");
-            return;
-        }
+//        System.out.print("주문할 상품 ID 입력: ");
+//        Long itemId = scanner.nextLong();
+//        scanner.nextLine(); // 버퍼 비우기
+//
+//        Item selectedItem = itemUI.findItemById(itemId);
+//        if (selectedItem == null) {
+//            System.out.println("해당 ID의 상품을 찾을 수 없습니다.");
+//            return;
+//        }
 
         // 수량 입력
-        System.out.print("주문 수량 입력: ");
-        int quantity = scanner.nextInt();
-        scanner.nextLine(); // 버퍼 비우기
-
-        if (quantity <= 0) {
-            System.out.println("수량은 1개 이상이어야 합니다.");
-            return;
-        }
+//        System.out.print("주문 수량 입력: ");
+//        int quantity = scanner.nextInt();
+//        scanner.nextLine(); // 버퍼 비우기
+//
+//        if (quantity <= 0) {
+//            System.out.println("수량은 1개 이상이어야 합니다.");
+//            return;
+//        }
 
         // 주문 생성
         int itemPrice = selectedItem.getPrice();
