@@ -20,14 +20,14 @@ public class Order {
     //
     // 계산 메서드
     // 출력 메서드 등 포함
-    @Override
-    public String toString() {
-        return "[주문 완료]" + "\n" +
-                "회원: " + memberService.findById(memberId).name + " "
-                + "(" + memberService.findById(memberId).grade + ")" + "\n" +
-                "상품: " + itemService.findById(itemId) + "\n" +
-                "수량: " + itemPrice + "개" + "\n" +
-                "할인 적용: " + discountPrice + "원" + "\n" +
-                "총 금액: " + finalPrice + "원" + "\n";
-    }
+//    @Override
+//    public String toString() {
+//        return "[주문 완료]" + "\n" +
+//                "회원: " + memberService.findById(memberId).name + " "
+//                + "(" + memberService.findById(memberId).grade + ")" + "\n" +
+//                "상품: " + itemService.findById(itemId) + "\n" +
+//                "수량: " + itemPrice + "개" + "\n" +
+//                "할인 적용: " + discountPrice + "원" + "\n" +
+//                "총 금액: " + finalPrice + "원" + "\n";
+//    }
 }

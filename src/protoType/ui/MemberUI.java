@@ -43,7 +43,7 @@ public class MemberUI {
         }
     }
 
-    private void registerMember() {
+    public void registerMember() {
         System.out.println("\n===== 회원 가입 =====");
 
         System.out.print("로그인 ID: ");

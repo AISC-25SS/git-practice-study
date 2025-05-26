@@ -1,4 +1,4 @@
-package protoType.discount;
+package protoType.order.discount;
 
 import protoType.member.Member;
 

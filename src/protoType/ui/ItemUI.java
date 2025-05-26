@@ -65,7 +65,7 @@ public class ItemUI {
 //    }
 
     // 상품 전체 검색(순회)
-    private void listItems() {
+    public void listItems() {
         List<Item> items = itemService.getAllItems();
         if (items.isEmpty()) {
             System.out.println("등록된 상품이 없습니다");

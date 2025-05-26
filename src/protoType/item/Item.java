@@ -5,7 +5,14 @@ public class Item {
     private String name;  // 상품명
     private int price;    // 가격 (원)
 
+    //Frame work 호환용
+    public Item (){ }
 
+    // 신규 사용자 등록용 생성자
+    public Item(String name, int price) {
+        this.name = name;
+        this.price = price;
+    }
     // 모든 필드를 초기화하는 생성자
     public Item(Long id, String name, int price) {
         this.id = id;
@@ -16,6 +23,10 @@ public class Item {
     // Getter 및 Setter 메서드
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id){
+        this.id = id;
     }
 
     public String getName() {
@@ -43,9 +54,6 @@ public class Item {
                 ", price=" + price +
                 '}';
     }
-    //setter가 빠졌네용
-    public void setId(Long id) {
-        this.id = id;
-    }
+
 }
 
